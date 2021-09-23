@@ -13,42 +13,47 @@ MonoBehaviour:
   m_Name: Mightyspidey-pmaa SDF
   m_EditorClassIdentifier: 
   hashCode: 0
-  material: {fileID: 0}
+  material: {fileID: 1496286565232976868}
   materialHashCode: 0
-  m_Version: 
-  m_SourceFontFileGUID: 
-  m_SourceFontFile_EditorRef: {fileID: 0}
-  m_SourceFontFile: {fileID: 0}
-  m_AtlasPopulationMode: 0
+  m_Version: 1.1.0
+  m_SourceFontFileGUID: 913ce63e29c684c6688f587ce17fef8a
+  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 913ce63e29c684c6688f587ce17fef8a, type: 3}
+  m_SourceFontFile: {fileID: 12800000, guid: 913ce63e29c684c6688f587ce17fef8a, type: 3}
+  m_AtlasPopulationMode: 1
   m_FaceInfo:
     m_FaceIndex: 0
-    m_FamilyName: 
-    m_StyleName: 
-    m_PointSize: 0
-    m_Scale: 0
-    m_LineHeight: 0
-    m_AscentLine: 0
-    m_CapLine: 0
-    m_MeanLine: 0
+    m_FamilyName: mightyspidey
+    m_StyleName: Medium
+    m_PointSize: 90
+    m_Scale: 1
+    m_LineHeight: 83.520004
+    m_AscentLine: 69.48
+    m_CapLine: 65
+    m_MeanLine: 46
     m_Baseline: 0
-    m_DescentLine: 0
-    m_SuperscriptOffset: 0
-    m_SuperscriptSize: 0
-    m_SubscriptOffset: 0
-    m_SubscriptSize: 0
-    m_UnderlineOffset: 0
-    m_UnderlineThickness: 0
-    m_StrikethroughOffset: 0
-    m_StrikethroughThickness: 0
-    m_TabWidth: 0
+    m_DescentLine: -5.94
+    m_SuperscriptOffset: 69.48
+    m_SuperscriptSize: 0.5
+    m_SubscriptOffset: -5.94
+    m_SubscriptSize: 0.5
+    m_UnderlineOffset: -13.500001
+    m_UnderlineThickness: 4.5
+    m_StrikethroughOffset: 18.4
+    m_StrikethroughThickness: 4.5
+    m_TabWidth: 27
   m_GlyphTable: []
   m_CharacterTable: []
-  m_AtlasTextures: []
+  m_AtlasTextures:
+  - {fileID: 2582184133959567329}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 0
   m_UsedGlyphRects: []
-  m_FreeGlyphRects: []
+  m_FreeGlyphRects:
+  - m_X: 0
+    m_Y: 0
+    m_Width: 1023
+    m_Height: 1023
   m_fontInfo:
     Name: 
     PointSize: 0
@@ -72,10 +77,10 @@ MonoBehaviour:
     AtlasWidth: 0
     AtlasHeight: 0
   atlas: {fileID: 0}
-  m_AtlasWidth: 0
-  m_AtlasHeight: 0
-  m_AtlasPadding: 0
-  m_AtlasRenderMode: 0
+  m_AtlasWidth: 1024
+  m_AtlasHeight: 1024
+  m_AtlasPadding: 9
+  m_AtlasRenderMode: 4165
   m_glyphInfoList: []
   m_KerningTable:
     kerningPairs: []
@@ -85,20 +90,20 @@ MonoBehaviour:
   m_FallbackFontAssetTable: []
   m_CreationSettings:
     sourceFontFileName: 
-    sourceFontFileGUID: 
+    sourceFontFileGUID: 913ce63e29c684c6688f587ce17fef8a
     pointSizeSamplingMode: 0
-    pointSize: 0
-    padding: 0
+    pointSize: 90
+    padding: 9
     packingMode: 0
-    atlasWidth: 0
-    atlasHeight: 0
-    characterSetSelectionMode: 0
+    atlasWidth: 1024
+    atlasHeight: 1024
+    characterSetSelectionMode: 7
     characterSequence: 
     referencedFontAssetGUID: 
     referencedTextAssetGUID: 
     fontStyle: 0
     fontStyleModifier: 0
-    renderMode: 0
+    renderMode: 4165
     includeFontFeatures: 0
   m_FontWeightTable:
   - regularTypeface: {fileID: 0}
@@ -128,3 +133,153 @@ MonoBehaviour:
   boldSpacing: 7
   italicStyle: 35
   tabSize: 10
+--- !u!21 &1496286565232976868
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mightyspidey-pmaa Atlas Material
+  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FaceTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2582184133959567329}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Ambient: 0.5
+    - _Bevel: 0.5
+    - _BevelClamp: 0
+    - _BevelOffset: 0
+    - _BevelRoundness: 0
+    - _BevelWidth: 0
+    - _BumpFace: 0
+    - _BumpOutline: 0
+    - _ColorMask: 15
+    - _CullMode: 0
+    - _Diffuse: 0.5
+    - _FaceDilate: 0
+    - _FaceUVSpeedX: 0
+    - _FaceUVSpeedY: 0
+    - _GlowInner: 0.05
+    - _GlowOffset: 0
+    - _GlowOuter: 0.05
+    - _GlowPower: 0.75
+    - _GradientScale: 10
+    - _LightAngle: 3.1416
+    - _MaskSoftnessX: 0
+    - _MaskSoftnessY: 0
+    - _OutlineSoftness: 0
+    - _OutlineUVSpeedX: 0
+    - _OutlineUVSpeedY: 0
+    - _OutlineWidth: 0
+    - _PerspectiveFilter: 0.875
+    - _Reflectivity: 10
+    - _ScaleRatioA: 1
+    - _ScaleRatioB: 1
+    - _ScaleRatioC: 1
+    - _ScaleX: 1
+    - _ScaleY: 1
+    - _ShaderFlags: 0
+    - _Sharpness: 0
+    - _SpecularPower: 2
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _TextureHeight: 1024
+    - _TextureWidth: 1024
+    - _UnderlayDilate: 0
+    - _UnderlayOffsetX: 0
+    - _UnderlayOffsetY: 0
+    - _UnderlaySoftness: 0
+    - _VertexOffsetX: 0
+    - _VertexOffsetY: 0
+    - _WeightBold: 0.75
+    - _WeightNormal: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
+    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_BuildTextureStacks: []
+--- !u!28 &2582184133959567329
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mightyspidey-pmaa Atlas
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 0
+  m_Height: 0
+  m_CompleteImageSize: 0
+  m_MipsStripped: 0
+  m_TextureFormat: 1
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMasterTextureLimit: 0
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 0
+  m_PlatformBlob: 
+  image data: 0
+  _typelessdata: 
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
