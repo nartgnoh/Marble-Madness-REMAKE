@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //count down
+        //count down, issue with resetting when player dies
         if(timeRemaining>0)
         {
             timeRemaining -= Time.deltaTime;
