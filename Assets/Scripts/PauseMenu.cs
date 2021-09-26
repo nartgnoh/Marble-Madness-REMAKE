@@ -32,4 +32,11 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Home(int sceneID)
+    {
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneID);
+    }
 }
