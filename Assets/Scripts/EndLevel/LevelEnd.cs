@@ -29,13 +29,13 @@ public class LevelEnd : MonoBehaviour
         //if collision with player, canvas shows
         if (collision.gameObject.tag == "Player")
         {
-            TimeBonus();
+            TimePointBonus();
             levelEndScreen.SetActive(true);
         }
     }
 
     //add timebonus on end level collision
-    private void TimeBonus()
+    private void TimePointBonus()
     {
         //get global timeRemaining
         timeRemaining = Math.Round(PlayerPrefs.GetFloat("timeRemaining"), 0);

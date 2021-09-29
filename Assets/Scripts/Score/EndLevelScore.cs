@@ -21,6 +21,6 @@ public class EndLevelScore : MonoBehaviour
         overallScore = Math.Round(PlayerPrefs.GetFloat("overallScore"));
 
         timeBonusText.text = string.Format("Time Bonus: +{0}", timeBonus);
-        overallScoreText.text = string.Format("Overall Score: {0}", overallScore);
+        overallScoreText.text = string.Format("Score: {0}", overallScore);
     }
 }
