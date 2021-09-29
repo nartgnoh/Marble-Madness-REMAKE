@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Attach to Main Camera
+//Camera Controller functionality
 public class CameraController : MonoBehaviour
 {
     public GameObject player;

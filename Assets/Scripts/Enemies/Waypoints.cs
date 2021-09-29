@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Attach to Empty GameObject to set WayPoints for Enemy Movement
+//MoveTowards waypoints IN ORDER
+//Set Enemies that reset the level by attaching the "Enemies" tag to them
 public class Waypoints : MonoBehaviour
 {
     public GameObject[] waypoints;
@@ -13,7 +16,7 @@ public class Waypoints : MonoBehaviour
 	void Update () {
 		if(Vector3.Distance(waypoints[current].transform.position, transform.position) < WPradius)
         {
-            current = Random.Range(0,waypoints.Length);
+            current++;
             if (current >= waypoints.Length)
             {
                 current = 0;

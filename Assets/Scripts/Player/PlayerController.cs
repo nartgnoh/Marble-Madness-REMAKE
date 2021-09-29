@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+//Attach to Player
+//Player Controller functionality
 public class PlayerController : MonoBehaviour
 {
     public float speed = 0;

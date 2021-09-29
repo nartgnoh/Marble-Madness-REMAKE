@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 //Attach to Player
+//Player Reset functionality
 public class Reset : MonoBehaviour
 {
     public float threshold = -50f;

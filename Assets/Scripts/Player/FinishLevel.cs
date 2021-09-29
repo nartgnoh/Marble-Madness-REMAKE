@@ -5,11 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//Attach to Player
+//Player Finish Level functionality - onCollisionEnter a "Finish" tagged "LevelEndMarker"
 public class FinishLevel : MonoBehaviour
 {
-
     //Time before next scene
-    public float timeBeforeNextScene = 5f;
+    public float timeBeforeNextScene = 3f;
     
     //updating text for level countdown
     public Text nextSceneTimerText;
