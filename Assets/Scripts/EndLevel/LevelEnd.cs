@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-
-//just to test out
+//Attach to LevelEndMarker(s)
 public class LevelEnd : MonoBehaviour
 {
     //end screen Canvas
@@ -11,6 +11,10 @@ public class LevelEnd : MonoBehaviour
     //quad marker
     public GameObject endMarker;
 
+    //for time bonus function
+    private double timeRemaining;
+    private float timeBonus;
+    private float overallScore;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +29,23 @@ public class LevelEnd : MonoBehaviour
         //if collision with player, canvas shows
         if (collision.gameObject.tag == "Player")
         {
+            TimePointBonus();
             levelEndScreen.SetActive(true);
         }
     }
-    
+
+    //add timebonus on end level collision
+    private void TimePointBonus()
+    {
+        //get global timeRemaining
+        timeRemaining = Math.Round(PlayerPrefs.GetFloat("timeRemaining"), 0);
+        //calculate time bonus and set global
+        timeBonus = (float)timeRemaining * 1000;
+        PlayerPrefs.SetFloat("timeBonus", timeBonus);
+        //get global overallScore
+        overallScore = PlayerPrefs.GetFloat("overallScore");
+
+        //update global "overallScore" with overallScore+timeBonus
+        PlayerPrefs.SetFloat("overallScore", overallScore + timeBonus);
+    }
 }
