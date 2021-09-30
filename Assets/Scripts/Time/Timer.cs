@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //Attach to Timer Text at top of level
 public class Timer : MonoBehaviour
@@ -14,6 +15,10 @@ public class Timer : MonoBehaviour
     public Text timerText;
 
     private float timeRemaining;
+
+    //new PlayerPrefs
+    private float totalTimeBonus;
+    private float finalScore;
 
     void Start()
     {
@@ -34,7 +39,8 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            //lose end scene
+            //load GameOver Scene
+            SceneManager.LoadScene("GameOver");
         }
     }
 

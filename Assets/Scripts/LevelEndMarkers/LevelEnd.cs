@@ -8,12 +8,16 @@ public class LevelEnd : MonoBehaviour
 {
     //end screen Canvas
     public GameObject levelEndScreen;
+    //to Destroy
+    public GameObject timeText;
+    public GameObject scoreText;
     //quad marker
     public GameObject endMarker;
 
     //for time bonus function
     private double timeRemaining;
     private float timeBonus;
+    private float currentTotalTimeBonus;
     private float overallScore;
 
     // Start is called before the first frame update
@@ -30,6 +34,8 @@ public class LevelEnd : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             TimePointBonus();
+            ResetLevel();
+
             levelEndScreen.SetActive(true);
         }
     }
@@ -42,10 +48,20 @@ public class LevelEnd : MonoBehaviour
         //calculate time bonus and set global
         timeBonus = (float)timeRemaining * 1000;
         PlayerPrefs.SetFloat("timeBonus", timeBonus);
+        //update totalTimeBonus
+        currentTotalTimeBonus = PlayerPrefs.GetFloat("totalTimeBonus");
+        PlayerPrefs.SetFloat("totalTimeBonus", currentTotalTimeBonus+timeBonus);
         //get global overallScore
         overallScore = PlayerPrefs.GetFloat("overallScore");
 
         //update global "overallScore" with overallScore+timeBonus
         PlayerPrefs.SetFloat("overallScore", overallScore + timeBonus);
+    }
+    
+    private void ResetLevel()
+    {
+        //delete Texts
+        Destroy(scoreText);
+        Destroy(timeText);
     }
 }
