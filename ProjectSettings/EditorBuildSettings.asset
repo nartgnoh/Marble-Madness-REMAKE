@@ -9,18 +9,18 @@ EditorBuildSettings:
     path: Assets/Templates/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
-    path: Assets/Scenes/V2GameScenes/Menu.unity
-    guid: c187c0e83f2b04a378c7d2d05594f9fd
+    path: Assets/Scenes/Final Scenes/MainMenu.unity
+    guid: dc5e6b1823dc34445b76a5e38683172e
   - enabled: 1
-    path: Assets/Scenes/V2GameScenes/LEVEL_01.unity
-    guid: af63f03f27b44d747bd42eac70021baa
+    path: Assets/Scenes/Final Scenes/LEVEL_01.unity
+    guid: 94f6df7ab58d9fc4487a90fcf801142a
   - enabled: 1
-    path: Assets/Scenes/V2GameScenes/LEVEL_02.unity
-    guid: 54d9889202a3c5b41a732b28716b63fc
+    path: Assets/Scenes/Final Scenes/LEVEL_02.unity
+    guid: e2920f18b2367844f9aae192ac9f0efd
   - enabled: 1
-    path: Assets/Scenes/V2GameScenes/LEVEL_03.unity
-    guid: 1d2a35e4b6d20f04a968c9ac81649f68
+    path: Assets/Scenes/Final Scenes/LEVEL_03.unity
+    guid: 27b79d47ee2a7c041a92d8541ca671b0
   - enabled: 1
-    path: Assets/Scenes/V2GameScenes/GameOver.unity
-    guid: e06d3ec6b708d4754b2b3f1203eb35c4
+    path: Assets/Scenes/Final Scenes/GameOver.unity
+    guid: 8d0f3de1f1ef61e448facd9e9dcab516
   m_configObjects: {}
