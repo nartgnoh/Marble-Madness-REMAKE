@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Attach to Player for FIRST LEVEL ONLY
+//Attach to empty game object in Start Menu
 public class SetInitial : MonoBehaviour
 {
     // Setting initial PlayerPrefs

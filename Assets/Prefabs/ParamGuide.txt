@@ -1,6 +1,6 @@
 Player:
     - In "Finish Level (Script)," need to set: "Time Before Next Level Text" param with
-        Route: UI -> Canvas-End -> Time Before Next Level (GameObject) (Text)
+        Located at: UI -> Canvas-End -> Time Before Next Level (GameObject) (Text)
 
 Main Camera:
     - In "Camera Controller (Script)," need to set: "Player" param with
@@ -8,8 +8,8 @@ Main Camera:
 
 LevelEndMarker:
     - In "Level End (Script)," need to set: "Level End Screen" param with
-        Route: UI -> Canvas-End (GameObject)
+        Located at: UI -> Canvas-End (GameObject)
     - In "Level End (Script)," need to set: "Time Text" param with
-        Route: UI -> Canvas-Level -> Timer (GameObject)
+        Located at: UI -> Canvas-Level -> Timer (GameObject)
     - In "Level End (Script)," need to set: "Score Text" param with
-        Route: UI -> Canvas-Level -> Score (GameObject)  
+        Located at: UI -> Canvas-Level -> Score (GameObject)  

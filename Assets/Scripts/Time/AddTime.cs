@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-//Attach to AddTime Text at top of level (DOESN'T EXIST IN FIRST LEVEL)
+//Attach to AddTime Text at top of level
 //Set the amount of time that should be added to the timer for each level
 public class AddTime : MonoBehaviour
 {
