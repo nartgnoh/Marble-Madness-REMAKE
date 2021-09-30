@@ -26,7 +26,8 @@ public class AddTime : MonoBehaviour
     //to check levelNumber so "AddTime" only runs once
     private int levelNumber;
 
-    void OnEnable(){
+    void Start()
+    {
         //Check levelNumber
         //This allows for "AddTime" to only occur once
         levelNumber = PlayerPrefs.GetInt("levelNumber", levelNumber);
@@ -53,7 +54,7 @@ public class AddTime : MonoBehaviour
         }
         else
         {
-            this.gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 
@@ -65,7 +66,7 @@ public class AddTime : MonoBehaviour
         {
             //when timer hits 0
             CancelInvoke("CheckTimer");
-            this.gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

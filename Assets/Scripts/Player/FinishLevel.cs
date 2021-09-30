@@ -10,10 +10,10 @@ using UnityEngine.SceneManagement;
 public class FinishLevel : MonoBehaviour
 {
     //Time before next scene
-    public float timeBeforeNextScene = 3f;
+    public float timeBeforeNextLevel = 4f;
     
     //updating text for level countdown
-    public Text nextSceneTimerText;
+    public Text timeBeforeNextLevelText;
     
     //set as player
     public GameObject playerObj;
@@ -30,7 +30,7 @@ public class FinishLevel : MonoBehaviour
             playerObj.gameObject.GetComponent<PlayerController>().enabled = false;
             playerObj.gameObject.GetComponent<Reset>().enabled = false;
 
-            countdownTimer = timeBeforeNextScene;
+            countdownTimer = timeBeforeNextLevel;
             InvokeRepeating("CheckTimer", 0f, 1f);
         }
     }
@@ -41,9 +41,9 @@ public class FinishLevel : MonoBehaviour
         //decrement countdownTimer
         countdownTimer -= 1f;
         SetTimerText();
-        if (countdownTimer == 0)
+        if (countdownTimer == 1)
         {
-            //when timer hits 0
+            //when timer hits 1
             CancelInvoke("CheckTimer");
             Invoke("LoadNextLevel", 5f);
         }
@@ -53,7 +53,7 @@ public class FinishLevel : MonoBehaviour
     void SetTimerText()
     {
         timeLeft = (int)countdownTimer;
-        nextSceneTimerText.text = string.Format("Next Level In... {0}", timeLeft);
+        timeBeforeNextLevelText.text = string.Format("Next Level In... {0}", timeLeft);
     }
 
     void LoadNextLevel()
