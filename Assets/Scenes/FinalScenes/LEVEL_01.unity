@@ -53265,6 +53265,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2236652554146170081, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+      propertyPath: addTime
+      value: 
+      objectReference: {fileID: 1733621436}
     - target: {fileID: 2236652554205049826, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
       propertyPath: m_Name
       value: UI

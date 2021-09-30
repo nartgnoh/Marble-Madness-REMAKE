@@ -34434,6 +34434,10 @@ PrefabInstance:
       propertyPath: initialTime
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 2236652554146170081, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+      propertyPath: addTime
+      value: 
+      objectReference: {fileID: 1441976799}
     - target: {fileID: 2236652554146170110, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0

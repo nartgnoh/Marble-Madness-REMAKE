@@ -24,21 +24,19 @@ public class AddTime : MonoBehaviour
     //for countdown to disable "addedTime" text
     private float countdownTimer;
     //to check levelNumber so "AddTime" only runs once
-    private int levelNumber;
+    private int addTimeLevelNumber;
 
-    void Start()
+    void OnEnable()
     {
-        //Check levelNumber
-        //This allows for "AddTime" to only occur once
-        levelNumber = PlayerPrefs.GetInt("levelNumber", levelNumber);
+        //get "addTimeLevelNumber"
+        addTimeLevelNumber = PlayerPrefs.GetInt("addTimeLevelNumber");
 
-        if (levelNumber == SceneManager.GetActiveScene().buildIndex)
+        //This allows for "AddTime" to only occur once
+        if (addTimeLevelNumber == SceneManager.GetActiveScene().buildIndex)
         {
             //update levelNumber (+1)
-            PlayerPrefs.SetInt("levelNumber", SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.SetInt("addTimeLevelNumber", SceneManager.GetActiveScene().buildIndex + 1);
 
-            //set "AddTime" Text to active
-            this.gameObject.SetActive(true);
             //get timeRemaining playerpref
             timeRemaining = PlayerPrefs.GetFloat("timeRemaining");
             addedTime = addedTimeLevel;
@@ -54,7 +52,7 @@ public class AddTime : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 
@@ -66,7 +64,7 @@ public class AddTime : MonoBehaviour
         {
             //when timer hits 0
             CancelInvoke("CheckTimer");
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 }

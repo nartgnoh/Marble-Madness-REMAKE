@@ -11,7 +11,6 @@ public class LevelEnd : MonoBehaviour
     //to Destroy
     public GameObject timeText;
     public GameObject scoreText;
-    public GameObject addTimeText;
     //quad marker
     public GameObject endMarker;
 
@@ -35,9 +34,8 @@ public class LevelEnd : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             TimePointBonus();
-            //delete Texts
-            Destroy(scoreText);
-            Destroy(timeText);
+            ResetLevel();
+
             levelEndScreen.SetActive(true);
         }
     }
@@ -58,5 +56,12 @@ public class LevelEnd : MonoBehaviour
 
         //update global "overallScore" with overallScore+timeBonus
         PlayerPrefs.SetFloat("overallScore", overallScore + timeBonus);
+    }
+    
+    private void ResetLevel()
+    {
+        //delete Texts
+        Destroy(scoreText);
+        Destroy(timeText);
     }
 }
