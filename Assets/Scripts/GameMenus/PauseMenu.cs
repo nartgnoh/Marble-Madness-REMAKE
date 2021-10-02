@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     private bool isPaused = false;
     PauseAction action;
+    public GameObject button;
 
     // public GameObject pauseMenuUI;
 
@@ -30,6 +31,7 @@ public class PauseMenu : MonoBehaviour
     {
         action.Disable();
     }
+
 
     private void Start()
     {
@@ -53,6 +55,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        button.SetActive(true);
+        
     }
 
 
@@ -61,6 +65,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        button.SetActive(false);
        // GameIsPaused = true;
     }
 
