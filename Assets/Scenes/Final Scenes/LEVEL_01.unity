@@ -59825,6 +59825,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5580002287001350806, guid: 16040919cf589384f9235fe303552d7a, type: 3}
   m_PrefabInstance: {fileID: 1165514701}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1944708656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2236652554092113220, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+  m_PrefabInstance: {fileID: 2001377774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1944708658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2236652554092113222, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+  m_PrefabInstance: {fileID: 2001377774}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944708656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b843a87ae71f64987ac60d2a957e0838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1945406680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5580002287001350806, guid: 16040919cf589384f9235fe303552d7a, type: 3}
@@ -62089,6 +62105,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2236652554092113222, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1944708656}
     - target: {fileID: 2236652554205049826, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
       propertyPath: m_Name
       value: UI
@@ -62136,6 +62156,14 @@ PrefabInstance:
     - target: {fileID: 2236652554205049829, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805272007153046549, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1944708658}
+    - target: {fileID: 7805272007153046549, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
