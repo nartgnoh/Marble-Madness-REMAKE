@@ -67066,11 +67066,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 528690666236754360, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 528690666236754360, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -38.30005
       objectReference: {fileID: 0}
     - target: {fileID: 2236652552870188009, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236652553332666054, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236652553332666054, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236652553332666054, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 2236652554092113222, guid: 6c0ce44da52e93d41b21f8704cd2abc0, type: 3}
       propertyPath: button
