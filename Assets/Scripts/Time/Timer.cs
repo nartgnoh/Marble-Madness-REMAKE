@@ -1,15 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
+//Attach to Timer Text at top of level
 public class Timer : MonoBehaviour
 {
     //float to count time
-    public float timeRemaining = 60.0f;
+    public float initialTime = 60.0f;
 
     //text for timer
     public Text timerText;
+
+    private float timeRemaining;
+
+    //new PlayerPrefs
+    private float totalTimeBonus;
+    private float finalScore;
+
+    void Start()
+    {
+        timeRemaining = PlayerPrefs.GetFloat("timeRemaining", timeRemaining);
+    }
 
     // Update is called once per frame
     void Update()
@@ -21,11 +35,19 @@ public class Timer : MonoBehaviour
             float minutes = Mathf.FloorToInt(timeRemaining / 60);
             float seconds = Mathf.FloorToInt(timeRemaining % 60);
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            PlayerPrefs.SetFloat("timeRemaining", timeRemaining);
         }
-
         else
         {
-            //lose end scene
+            //load GameOver Scene
+            SceneManager.LoadScene("GameOver");
         }
+    }
+
+    void Awake()
+    {
+        //don't destroy object on scene load
+        DontDestroyOnLoad(this.gameObject);
+        timeRemaining = initialTime;
     }
 }

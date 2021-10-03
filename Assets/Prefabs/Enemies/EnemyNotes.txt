@@ -1,0 +1,33 @@
+Steps to Create Enemies in Levels/Scenes
+1. Create an "Enemies" empty game object 
+2. Set "Enemies" to transform 0-0-0
+3. Insert desired "Enemies" prefabs located at Prefabs/Enemies/<Pick one>
+4. Set desired transform location for each enemy
+5. Set "Waypoints" for desired enemies
+    -> if enemy prefab specifies "Random":
+            The "Waypoints" movements is "Random" between the wps
+    -> otherwise:
+        The "Waypoints" movements is "In-Order" of how the wps are set
+
+
+Steps to Create New Enemies Prefabs
+1. Create an empty game object to be the "enemy game object" and give it a descriptive name
+    (if using the "RandomWaypoints" script, add "Random" to beginning of name)
+2. Create a 3-D Object and put inside of enemy game object (set transform to 0-0-0)
+3. Give the object
+    -> a "Rigidbody" component if you want gravity (suggested "Mass" is 25)
+    -> no extra components if you want floating
+4. Setting Tags in 3-D object (do not set to entire enemy game object)
+    -> if you want the enemy to be able to "destroy" the player and reset the level:
+            Set the tags to "Enemies"
+    -> otherwise:
+            Set the tags to "Obstacles"
+5. Set the movement scripts (located at Scripts/Enemies/<Pick one>)
+    -> "Waypoints" script for in-order movement
+    -> "RandomWaypoints" script for random movement
+6. Create new empty game object(s) and put inside of enemy game object (set transform to 0-0-0)
+     and label them "wp1", "wp2", "wp3,"... (as many waypoints as you want)
+7. Add wps params to Waypoints (Script) -> Waypoints (set number of wps available)
+8. Set speed param to Waypoints (Script)
+9. Move wps to desired points for the enemy object to move inbetween
+10. Add enemy game object to prefabs at Prefabs/Enemies and set enemy's transform to 0-0-0
