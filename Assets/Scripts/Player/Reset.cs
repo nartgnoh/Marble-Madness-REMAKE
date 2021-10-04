@@ -8,7 +8,8 @@ using UnityEngine.SceneManagement;
 public class Reset : MonoBehaviour
 {
     public float threshold = -50f;
-    public GameObject source;
+    public GameObject source; //SFX
+    private bool AlreadyPlayed = false;
     // Update is called once per frame
 
     void Update()
@@ -17,8 +18,9 @@ public class Reset : MonoBehaviour
         {
             //DontDestroyOnLoad (transform.gameObject);
             //GameObject.DontDestroyOnLoad(source);
-            Instantiate(source, transform.position, Quaternion.identity); //play SFX
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //Instantiate(source, transform.position, Quaternion.identity); //play SFX
+            StartCoroutine(pause());
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     // Reset on enemy collision
@@ -29,7 +31,17 @@ public class Reset : MonoBehaviour
             //DontDestroyOnLoad (transform.gameObject);
             //GameObject.DontDestroyOnLoad(source);
             Instantiate(source, transform.position, Quaternion.identity); //play SFX
+            StartCoroutine(pause());
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+    }
+    IEnumerator pause(){
+        if (!AlreadyPlayed)
+        {
+            Instantiate(source, transform.position, Quaternion.identity);
+            AlreadyPlayed = true;
+        }
+        yield return new WaitForSeconds(.2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
