@@ -16,11 +16,7 @@ public class Reset : MonoBehaviour
     {
         if (transform.position.y < threshold)
         {
-            //DontDestroyOnLoad (transform.gameObject);
-            //GameObject.DontDestroyOnLoad(source);
-            //Instantiate(source, transform.position, Quaternion.identity); //play SFX
             StartCoroutine(pause());
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     // Reset on enemy collision
@@ -28,11 +24,7 @@ public class Reset : MonoBehaviour
     {
         if (player.gameObject.tag == "Enemies")
         {
-            //DontDestroyOnLoad (transform.gameObject);
-            //GameObject.DontDestroyOnLoad(source);
-            Instantiate(source, transform.position, Quaternion.identity); //play SFX
             StartCoroutine(pause());
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     IEnumerator pause(){
