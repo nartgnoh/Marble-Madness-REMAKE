@@ -7,8 +7,9 @@ using UnityEngine.SceneManagement;
 public class SetInitial : MonoBehaviour
 {
     // Setting initial PlayerPrefs
-    void Start()
+    void Awake()
     {
+        PlayerPrefs.DeleteAll();
         //Set totalTimeBonus = 0 at start
         PlayerPrefs.SetFloat("totalTimeBonus", 0f);
         //Set addTimeLevelNumber = 2 to start so "AddTime" only occurs on level 2 and onwards

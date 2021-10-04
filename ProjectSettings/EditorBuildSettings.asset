@@ -22,8 +22,11 @@ EditorBuildSettings:
     guid: 27b79d47ee2a7c041a92d8541ca671b0
   - enabled: 1
     path: Assets/Scenes/Final Scenes/LEVEL_04.unity
-    guid: 6bf124c5e0373e94783314ee58c99641
+    guid: 206983547bf38d5409e8cb96c2a320d4
   - enabled: 1
     path: Assets/Scenes/Final Scenes/GameOver.unity
     guid: 8d0f3de1f1ef61e448facd9e9dcab516
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/Success.unity
+    guid: 325f620d98cf44186b1d4408cda05fd9
   m_configObjects: {}

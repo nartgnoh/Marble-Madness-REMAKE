@@ -55,8 +55,17 @@ public class FinishLevel : MonoBehaviour
     //update text during countdown
     void SetTimerText()
     {
-        timeLeft = (int)countdownTimer;
-        timeBeforeNextLevelText.text = string.Format("Next Level In... {0}", timeLeft);
+        //(total number of scenes - 3) to get the number of the final level
+        if (SceneManager.sceneCountInBuildSettings-3 == SceneManager.GetActiveScene().buildIndex)
+        {   
+            timeLeft = (int)countdownTimer;
+            timeBeforeNextLevelText.text = string.Format("Congratulations!");
+        }
+        else
+        {
+            timeLeft = (int)countdownTimer;
+            timeBeforeNextLevelText.text = string.Format("Next Level In... {0}", timeLeft);
+        }
     }
 
     void LoadNextLevel()
@@ -64,7 +73,17 @@ public class FinishLevel : MonoBehaviour
         //enable playerController and reset components
         playerObj.gameObject.GetComponent<PlayerController>().enabled = true;
         playerObj.gameObject.GetComponent<Reset>().enabled = true;
-        //change to next scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        //(total number of scenes - 3) to get the number of the final level
+        if (SceneManager.sceneCountInBuildSettings-3 == SceneManager.GetActiveScene().buildIndex)
+        {
+            //change to success scene
+            SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+        }
+        else
+        {
+            //change to next level scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }
