@@ -162,6 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   boost: 250
+  whoosh: {fileID: 0}
 --- !u!114 &7375104554637513924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0a305aed3a9bdb4f9444ceeee712b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: -35
+  threshold: -22.5
+  source: {fileID: 0}
 --- !u!96 &7375104554637513925
 TrailRenderer:
   serializedVersion: 2
