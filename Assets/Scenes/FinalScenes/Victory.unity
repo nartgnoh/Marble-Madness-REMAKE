@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 437411379}
   - component: {fileID: 437411378}
   m_Layer: 5
-  m_Name: Success
+  m_Name: Victory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SUCCESS
+  m_text: VICTORY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b747f41f4c51a492eb85ba8c3b98b95e, type: 2}
   m_sharedMaterial: {fileID: -5531090584144392019, guid: b747f41f4c51a492eb85ba8c3b98b95e, type: 2}
