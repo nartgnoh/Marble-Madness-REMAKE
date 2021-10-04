@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private float movementX;
     private float movementY;
+    public GameObject whoosh; //SFX
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
         Vector3 boostVector = new Vector3(movementX, 0.0f, movementY);
 
         rb.AddForce(boostVector * boost);
+        Instantiate(whoosh, transform.position, Quaternion.identity);
     }
 
     void FixedUpdate()

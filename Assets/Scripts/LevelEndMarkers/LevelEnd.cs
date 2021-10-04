@@ -13,7 +13,7 @@ public class LevelEnd : MonoBehaviour
     public GameObject scoreText;
     //quad marker
     public GameObject endMarker;
-
+    public GameObject win;
     //for time bonus function
     private double timeRemaining;
     private float timeBonus;
@@ -37,6 +37,7 @@ public class LevelEnd : MonoBehaviour
             ResetLevel();
 
             levelEndScreen.SetActive(true);
+            Instantiate(win, transform.position, Quaternion.identity);
         }
     }
 

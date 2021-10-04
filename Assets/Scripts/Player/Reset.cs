@@ -8,12 +8,15 @@ using UnityEngine.SceneManagement;
 public class Reset : MonoBehaviour
 {
     public float threshold = -50f;
+    public GameObject source; //SFX
+    private bool AlreadyPlayed = false;
     // Update is called once per frame
+
     void Update()
     {
         if (transform.position.y < threshold)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            StartCoroutine(pause());
         }
     }
     // Reset on enemy collision
@@ -21,7 +24,16 @@ public class Reset : MonoBehaviour
     {
         if (player.gameObject.tag == "Enemies")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            StartCoroutine(pause());
         }
+    }
+    IEnumerator pause(){
+        if (!AlreadyPlayed)
+        {
+            Instantiate(source, transform.position, Quaternion.identity);
+            AlreadyPlayed = true;
+        }
+        yield return new WaitForSeconds(.2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
