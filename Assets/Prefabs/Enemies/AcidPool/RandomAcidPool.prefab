@@ -47,7 +47,7 @@ MonoBehaviour:
   - {fileID: 39456605077006654}
   - {fileID: 39456605156985085}
   - {fileID: 270981308}
-  speed: 12
+  speed: 10
 --- !u!1001 &1746454504919543878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57,7 +57,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1779074189094366862, guid: fbb04af3c5627ca49970948f85984d77, type: 3}
       propertyPath: m_Name
-      value: AcidPool
+      value: RandomAcidPool
       objectReference: {fileID: 0}
     - target: {fileID: 1779074189582486968, guid: fbb04af3c5627ca49970948f85984d77, type: 3}
       propertyPath: m_LocalPosition.x
@@ -89,15 +89,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1779074190399666684, guid: fbb04af3c5627ca49970948f85984d77, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1779074190399666684, guid: fbb04af3c5627ca49970948f85984d77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1779074190399666684, guid: fbb04af3c5627ca49970948f85984d77, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -81
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1779074190399666684, guid: fbb04af3c5627ca49970948f85984d77, type: 3}
       propertyPath: m_LocalRotation.w

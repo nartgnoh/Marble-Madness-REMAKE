@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class SetInitial : MonoBehaviour
 {
     // Setting initial PlayerPrefs
-    void Awake()
+    void Start()
     {
         PlayerPrefs.DeleteAll();
         //Set totalTimeBonus = 0 at start

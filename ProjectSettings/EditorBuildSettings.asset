@@ -9,24 +9,24 @@ EditorBuildSettings:
     path: Assets/Templates/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/MainMenu.unity
+    path: Assets/Scenes/FinalScenes/MainMenu.unity
     guid: dc5e6b1823dc34445b76a5e38683172e
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/LEVEL_01.unity
+    path: Assets/Scenes/FinalScenes/LEVEL_01.unity
     guid: 94f6df7ab58d9fc4487a90fcf801142a
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/LEVEL_02.unity
+    path: Assets/Scenes/FinalScenes/LEVEL_02.unity
     guid: e2920f18b2367844f9aae192ac9f0efd
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/LEVEL_03.unity
+    path: Assets/Scenes/FinalScenes/LEVEL_03.unity
     guid: 27b79d47ee2a7c041a92d8541ca671b0
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/LEVEL_04.unity
+    path: Assets/Scenes/FinalScenes/LEVEL_04.unity
     guid: 206983547bf38d5409e8cb96c2a320d4
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/GameOver.unity
+    path: Assets/Scenes/FinalScenes/GameOver.unity
     guid: 8d0f3de1f1ef61e448facd9e9dcab516
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/Success.unity
+    path: Assets/Scenes/FinalScenes/Success.unity
     guid: 325f620d98cf44186b1d4408cda05fd9
   m_configObjects: {}

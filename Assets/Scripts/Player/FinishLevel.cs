@@ -59,7 +59,7 @@ public class FinishLevel : MonoBehaviour
         if (SceneManager.sceneCountInBuildSettings-3 == SceneManager.GetActiveScene().buildIndex)
         {   
             timeLeft = (int)countdownTimer;
-            timeBeforeNextLevelText.text = string.Format("Congratulations!");
+            timeBeforeNextLevelText.text = string.Format("You Win!");
         }
         else
         {
