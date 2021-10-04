@@ -59,7 +59,6 @@ public class PauseMenu : MonoBehaviour
         
     }
 
-
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
@@ -76,7 +75,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Home(int sceneID)
     {
-
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneID);
     }
