@@ -20,6 +20,8 @@ public class FinishLevel : MonoBehaviour
 
     private int timeLeft;
     private float countdownTimer;
+
+    //public GameObject win;
     
     // disable player controller and reset on finish line collision
     // start counting down until next level
@@ -29,6 +31,7 @@ public class FinishLevel : MonoBehaviour
         {
             playerObj.gameObject.GetComponent<PlayerController>().enabled = false;
             playerObj.gameObject.GetComponent<Reset>().enabled = false;
+            //Instantiate(win, transform.position, Quaternion.identity);
 
             countdownTimer = timeBeforeNextLevel;
             InvokeRepeating("CheckTimer", 0f, 1f);

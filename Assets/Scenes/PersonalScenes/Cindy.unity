@@ -6322,6 +6322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   boost: 250
+  whoosh: {fileID: 7980043557446157207, guid: ee26e51acc8de4141bc7f69e06083408, type: 3}
 --- !u!114 &228763181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6365,7 +6366,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: -35
-  source: {fileID: 1672306410368893444, guid: c9f67ea99026e5d4587fa47385764162, type: 3}
 --- !u!96 &228763183
 TrailRenderer:
   serializedVersion: 2
@@ -37305,14 +37305,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1566253584}
   - component: {fileID: 1566253585}
-  - component: {fileID: 1566253586}
   m_Layer: 0
   m_Name: Death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1566253584
 Transform:
   m_ObjectHideFlags: 0
@@ -37423,20 +37422,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1566253586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566253583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ff8881afecc229429a52d0fc4ac0d8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  threshold: -10
-  source: {fileID: 1566253583}
 --- !u!1001 &1568038869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50278,6 +50263,7 @@ MonoBehaviour:
   timeText: {fileID: 0}
   scoreText: {fileID: 0}
   endMarker: {fileID: 2090254075}
+  win: {fileID: 8582733549414902176, guid: 41c8ab688a1df534f91c7592ed346fbb, type: 3}
 --- !u!64 &2090254078
 MeshCollider:
   m_ObjectHideFlags: 0
