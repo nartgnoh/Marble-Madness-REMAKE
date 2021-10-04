@@ -6366,6 +6366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: -35
+  source: {fileID: 1672306410368893444, guid: c9f67ea99026e5d4587fa47385764162, type: 3}
 --- !u!96 &228763183
 TrailRenderer:
   serializedVersion: 2

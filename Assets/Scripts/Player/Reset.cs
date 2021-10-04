@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Reset : MonoBehaviour
 {
     public float threshold = -50f;
-    //public GameObject source;
+    public GameObject source;
     // Update is called once per frame
 
     void Update()
@@ -17,7 +17,7 @@ public class Reset : MonoBehaviour
         {
             //DontDestroyOnLoad (transform.gameObject);
             //GameObject.DontDestroyOnLoad(source);
-            //Instantiate(source, transform.position, Quaternion.identity); //play SFX
+            Instantiate(source, transform.position, Quaternion.identity); //play SFX
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -28,7 +28,7 @@ public class Reset : MonoBehaviour
         {
             //DontDestroyOnLoad (transform.gameObject);
             //GameObject.DontDestroyOnLoad(source);
-            //Instantiate(source, transform.position, Quaternion.identity); //play SFX
+            Instantiate(source, transform.position, Quaternion.identity); //play SFX
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
