@@ -2,9 +2,14 @@
 
 A 2021 REMAKE of the classic Atari game, Marble Madness (1984).
 
+Find it here: https://cvu232.itch.io/marble-madness-remake
+
 ## Description
 
-Code-base for Project 1 - DATT4300 (Fall 2021)
+Code-base for Marble Madness REMAKE - A 3D platformer made using the Unity Engine.
+
+Project 1 - DATT4300 (Fall 2021)
+
 ## Getting Started
 
 ### Dependencies
