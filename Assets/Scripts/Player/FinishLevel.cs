@@ -21,14 +21,21 @@ public class FinishLevel : MonoBehaviour
     private int timeLeft;
     private float countdownTimer;
 
-    //public GameObject win;
+    //to check levelNumber so "OnCollisionEnter" only runs once
+    private int playerLevelEndNumber;
     
     // disable player controller and reset on finish line collision
     // start counting down until next level
     void OnCollisionEnter(Collision player)
     {
-        if (player.gameObject.tag == "Finish")
+        //get "playerLevelEndNumber"
+        playerLevelEndNumber = PlayerPrefs.GetInt("playerLevelEndNumber");
+        
+        if (player.gameObject.tag == "Finish" && playerLevelEndNumber == SceneManager.GetActiveScene().buildIndex)
         {
+            //update levelNumber (+1)
+            PlayerPrefs.SetInt("playerLevelEndNumber", SceneManager.GetActiveScene().buildIndex + 1);
+
             playerObj.gameObject.GetComponent<PlayerController>().enabled = false;
             playerObj.gameObject.GetComponent<Reset>().enabled = false;
             //Instantiate(win, transform.position, Quaternion.identity);

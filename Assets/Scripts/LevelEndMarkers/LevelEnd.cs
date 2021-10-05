@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //Attach to LevelEndMarker(s)
 public class LevelEnd : MonoBehaviour
@@ -19,6 +21,8 @@ public class LevelEnd : MonoBehaviour
     private float timeBonus;
     private float currentTotalTimeBonus;
     private float overallScore;
+    //to check levelNumber so "OnCollisionEnter" only runs once
+    private int levelEndNumber;
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +34,14 @@ public class LevelEnd : MonoBehaviour
     //enters end marker
     void OnCollisionEnter(Collision collision)
     {
+        //get "levelEndNumber"
+        levelEndNumber = PlayerPrefs.GetInt("levelEndNumber");
         //if collision with player, canvas shows
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && levelEndNumber == SceneManager.GetActiveScene().buildIndex)
         {
+            //update levelNumber (+1)
+            PlayerPrefs.SetInt("levelEndNumber", SceneManager.GetActiveScene().buildIndex + 1);
+
             TimePointBonus();
             ResetLevel();
 
