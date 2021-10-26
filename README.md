@@ -39,7 +39,7 @@ git clone git@github.com:nartgnoh/Marble_Madness_REMAKE.git
 ## Acknowledgments
 
 Marble Madness (1984) References:
-* [Internet Archive Game Decription - Marble Madness](https://archive.org/details/gg_Marble_Madness_1992Atari_Tengen)
+* Still of Morning by Eric Matyas
 * [Moby Games - Marble Madness](https://www.mobygames.com/game/marble-madness)
 * [YouTube - NES Longplay [235] Marble Madness](https://www.youtube.com/watch?v=CvlbZwoWMgA)
 
