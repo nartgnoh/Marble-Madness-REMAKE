@@ -10,9 +10,18 @@ Find it here: https://cvu232.itch.io/marble-madness-remake
 
 ## Description
 
-Code-base for Marble Madness REMAKE - A 3D platformer made using the Unity Engine.
+"Roll to the goal in a race against time!"
+Miss the marble game from the NES days? Introducing its unofficial successor Marble Madness Remake! In this new remake you get to experience 4 new levels with enhanced graphics. Think you can outrun the clock?
 
-Project 1 - DATT4300 (Fall 2021)
+### Controls:
+
+[WASD/Arrow Keys] - Move around
+
+[Spacebar] - Boost
+
+### Gameplay:
+
+Yellow enemies will push you around. Red enemies will destroy you instantly. Avoid holes and reach the purple finish line to beat the level!
 
 ## Getting Started
 
