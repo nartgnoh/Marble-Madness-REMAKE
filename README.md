@@ -13,6 +13,8 @@ Find it here: https://cvu232.itch.io/marble-madness-remake
 "Roll to the goal in a race against time!"
 Miss the marble game from the NES days? Introducing its unofficial successor Marble Madness Remake! In this new remake you get to experience 4 new levels with enhanced graphics. Think you can outrun the clock?
 
+Code-base for Marble Madness REMAKE - A 3D platformer made using the Unity Engine.
+
 ### Controls:
 
 [WASD/Arrow Keys] - Move around
